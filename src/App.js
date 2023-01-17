@@ -18,12 +18,9 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="App">
       <Document title="Terms and Conditions" content={content} />
-      <div className="App">
-        <Document title="Terms and Conditions" content={content} />
-      </div>
-    </>
+    </div>
   );
 }
 
