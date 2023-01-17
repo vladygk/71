@@ -1,4 +1,4 @@
-export function Document(props) {
+export default function Document(props) {
     const checkScrollHeight = (e)=>{
          
         if ((e.target.scrollTop + e.target.offsetHeight) >= e.target.scrollHeight){
