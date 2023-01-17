@@ -5,15 +5,17 @@ function App() {
  const [content, setContent] = useState("");
 
  useEffect(()=>{
-     fetch("https://jaspervdj.be/lorem-markdownum/markdown.txt").then(text=>text.text()).then(text=>setContent(text));
+     fetch("https://jaspervdj.be/lorem-markdownum/markdown.txt")
+     .then(result=>result.text())
+     .then(text=>setContent(text));
     
   },[]);
 
   
   return (
-    <div className="App">
+    
       <Document  title="Terms and Conditions" content={content}/>
-    </div>
+   
   );
 }
 
