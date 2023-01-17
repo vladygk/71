@@ -19,7 +19,12 @@ function App() {
     FetchData();
   }, []);
 
-  return (<><Document title="Terms and Conditions" content={content} /></>);
+  return  (
+    <div className="App">
+      <Document title="Terms and Conditions" content={content} />
+    </div>
+  );
+
 }
 
 export default App;
