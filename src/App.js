@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import Document from "./Document";
+import Document from "./Document.js";
 
 function App() {
 
