@@ -19,7 +19,7 @@ function App() {
     FetchData();
   }, []);
 
-  return <Document title="Terms and Conditions" content={content} />;
+  return (<><Document title="Terms and Conditions" content={content} /></>);
 }
 
 export default App;
